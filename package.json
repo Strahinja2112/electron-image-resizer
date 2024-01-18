@@ -2,21 +2,29 @@
 	"name": "imageresizer",
 	"productName": "ImageResizer",
 	"version": "1.0.0",
-	"description": "",
+	"description": "ImageResizer",
+	"authors": "Strahinja Pavicevic",
 	"main": "main.js",
 	"scripts": {
 		"start": "electron-forge start",
 		"package": "electron-forge package",
-		"make": "electron-forge make"
+		"make": "electron-forge make",
+		"dev": "npx electronmon ."
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
 		"@electron-forge/cli": "^7.2.0",
+		"@electron-forge/maker-deb": "^7.2.0",
+		"@electron-forge/maker-rpm": "^7.2.0",
+		"@electron-forge/maker-squirrel": "^7.2.0",
+		"@electron-forge/maker-zip": "^7.2.0",
+		"@electron-forge/plugin-auto-unpack-natives": "^7.2.0",
 		"electron": "^20.2.0"
 	},
 	"dependencies": {
+		"electron-squirrel-startup": "^1.0.0",
 		"resize-img": "^2.0.0",
 		"toastify-js": "^1.12.0"
 	}
