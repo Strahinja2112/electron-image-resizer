@@ -80,19 +80,6 @@ const menu = [
 				},
 		  ]
 		: []),
-	...(isDev
-		? [
-				{
-					label: "Developer",
-					submenu: [
-						{ role: "reload" },
-						{ role: "forcereload" },
-						{ type: "separator" },
-						{ role: "toggledevtools" },
-					],
-				},
-		  ]
-		: []),
 ];
 
 ipcMain.on("image:resize", (_, options) => {
