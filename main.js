@@ -13,9 +13,9 @@ let aboutWindow;
 function createMainWindow() {
 	mainWindow = new BrowserWindow({
 		width: 500,
-		height: 700,
+		height: 750,
 		icon: `${__dirname}/assets/icons/Icon_256x256.png`,
-		resizable: isDev,
+		resizable: false,
 		webPreferences: {
 			nodeIntegration: true,
 			contextIsolation: true,
@@ -70,13 +70,8 @@ const menu = [
 	...(!isMac
 		? [
 				{
-					label: "Help",
-					submenu: [
-						{
-							label: "About",
-							click: createAboutWindow,
-						},
-					],
+					label: "About this App",
+					click: createAboutWindow,
 				},
 		  ]
 		: []),
