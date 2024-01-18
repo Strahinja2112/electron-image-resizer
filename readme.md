@@ -15,7 +15,7 @@ npm start
 npm run dev
 ```
 
-## Packaging
+## Packaging and Building
 
 - Make sure that you changed authors and description in the [package.json](./package.json) file
 
