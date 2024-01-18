@@ -28,6 +28,11 @@ function createMainWindow() {
 	// }
 
 	mainWindow.loadFile(path.join(__dirname, "./renderer/index.html"));
+
+	mainWindow.webContents.on("new-window", (e, url) => {
+		e.preventDefault();
+		shell.openExternal(url);
+	});
 }
 
 function createAboutWindow() {
@@ -39,6 +44,11 @@ function createAboutWindow() {
 	});
 
 	aboutWindow.loadFile(path.join(__dirname, "./renderer/about.html"));
+
+	aboutWindow.webContents.on("new-window", (e, url) => {
+		e.preventDefault();
+		shell.openExternal(url);
+	});
 }
 
 app.on("ready", () => {
