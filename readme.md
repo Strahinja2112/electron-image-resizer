@@ -1,6 +1,14 @@
-# Image Resizer
+**Image Resizer** is an Electron.js app that allows users to upload an image and resize it to their liking.
 
-Electron application that allows you to select an image and easily change the width and/or height.
+## Key Features
+
+- **Upload and Resize:**  
+  Easily upload an image and resize it using simple controls.
+
+## Benefits
+
+- Quickly resize images for various purposes.
+- Enjoy a user-friendly interface for easy image manipulation.
 
 ## Usage
 
